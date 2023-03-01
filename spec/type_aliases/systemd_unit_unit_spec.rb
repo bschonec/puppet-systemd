@@ -45,4 +45,5 @@ describe 'Systemd::Unit::Unit' do
 
   it { is_expected.to allow_value({ 'RequiresMountsFor' => '/an/absolute/path' }) }
   it { is_expected.not_to allow_value({ 'RequiresMountsFor' => 'not/an/absolute/path' }) }
+  it { is_expected.not_to allow_value({ 'RequiresMountsFor' => ['not/an/absolute/path'] }) }
 end
