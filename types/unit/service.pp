@@ -43,5 +43,6 @@ type Systemd::Unit::Service = Struct[
     Optional['Group']                     => String,
     Optional['StandardOutput']            => String,
     Optional['StandardError']             => String,
+    Optional['RequiresMountsFor']         => String,
   }
 ]
